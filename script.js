@@ -10,18 +10,17 @@ ${vaga.nome}<br>
 ${vaga.descricao}<br><br>
 Data limite para se candidatar:<br>
 ${vaga.dataLimite}<br><br>
-<button  onclick="inscrever()"  id="inscrever">Inscrever o candidato</button>
-`
-vagas.push(vaga)
 
-vagas += `${vaga.nome}<br><br>
+`
+vagas += `Vaga<br>${vaga.nome}<br><br>
              ${vaga.descricao}<br><br>
-             ${vaga.dataLimite}`
-     
+             ${vaga.dataLimite}<br><button  onclick="inscrever()"  id="inscrever">Inscrever o candidato</button><br>`
+
+
+             vagas.push(vaga)
       }
       function listar(){
-         document.getElementById(`resultado`).innerHTML = 
-         `vagas<br><br>${vagas}`
+         document.getElementById(`resultado`).innerHTML = vagas
         
       
       
