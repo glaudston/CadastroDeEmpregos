@@ -12,9 +12,9 @@ Data limite para se candidatar:<br>
 ${vaga.dataLimite}<br><br>
 
 `
-vagas += `Vaga<br>${vaga.nome}<br><br>
+vagas += `<br>Vaga<br><br>${vaga.nome}<br><br>
              ${vaga.descricao}<br><br>
-             ${vaga.dataLimite}<br><button  onclick="inscrever()"  id="inscrever">Inscrever o candidato</button><br>`
+             ${vaga.dataLimite}<br><br><button  onclick="inscrever()"  id="inscrever">Inscrever o candidato</button><br><br>`
 
 
              vagas.push(vaga)
