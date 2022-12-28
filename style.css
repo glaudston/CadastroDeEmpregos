@@ -1,16 +1,23 @@
 .container{
-    border: 1px solid;
+    margin-top: 5%;
+   gap: 5px;
     display: flex;
 }
 .opcoes{
+    box-shadow: -20px 10px 40px;
+    border-radius: 0px;
     text-align: center;
     width: 50%;
-    height: 70vh;
+    height: 450px;
     border: 2px solid;
 }
 #resultado{
+    box-shadow: 20px 10px 40px;
+    overflow: scroll;
+    border-radius: 0px;
     border: 2px solid;
     width: 50%;
+    height: 450px;
     text-align: center;
 }
 button{
@@ -30,4 +37,9 @@ button{
 }
 #inscrever:hover{
     background-color:green;
+    cursor: pointer;
+}
+button:hover{
+    background-color:green;
+    cursor: pointer;
 }
