@@ -3,28 +3,24 @@ let candidato = []
 
 //Nova Vaga
 function criarvaga(){
-  let vaga = {nome:prompt(`Nome da vaga:`),descricao:prompt(`Descrição da vaga : Ex: função, carga horária ...`),dataLimite:prompt(`digite a data limite para candidatura:`) }
+  var vaga = {nome:prompt(`Nome da vaga:`),descricao:prompt(`Descrição da vaga : Ex: função, carga horária ...`),dataLimite:prompt(`digite a data limite para candidatura:`) }
 document.getElementById(`resultado`).innerHTML = 
 `<br>Vagas<br><br>
 ${vaga.nome}<br>
 ${vaga.descricao}<br><br>
 Data limite para se candidatar:<br>
-${vaga.dataLimite}<br><br>
+${vaga.dataLimite}<br><br>`
 
-`
+}
+
 vagas += `<br>Vaga<br><br>${vaga.nome}<br><br>
              ${vaga.descricao}<br><br>
              ${vaga.dataLimite}<br><br><button  onclick="inscrever()"  id="inscrever">Inscrever o candidato</button><br><br>`
-
-
              vagas.push(vaga)
-      }
+
       function listar(){
          document.getElementById(`resultado`).innerHTML = vagas
-        
-      
-      
-      }
+     }
 
 //Candidato á Vaga
 function inscrever(){
@@ -40,9 +36,21 @@ function inscrever(){
    
   
 }
-
+function excluirvaga(){
+  document.getElementById(`resultado`).innerHTML = 
+  `${vagas}"<button  onclick="excluir()"  id="excluir">Excluir candidato</button>"`
+}
 
 function confirmar(){
  
    
 }
+function excluir(){
+  vagas.splice()
+}
+
+
+//vagas += `<br>Excluir vaga<br><br>
+  //           ${vaga.nome}<br><br>
+    //         ${vaga.descricao}<br><br>
+      //       ${vaga.dataLimite}<br><br><button  onclick="excluir()"  id="excluir">Excluir candidato</button><br><br>`
